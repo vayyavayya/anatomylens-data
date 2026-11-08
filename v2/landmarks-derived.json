@@ -1,0 +1,660 @@
+{
+ "version": 1,
+ "generated": "2026-11-08T21:36:36.166Z",
+ "landmarks": [
+  {
+   "n": "Stylomastoid foramen",
+   "la": "Foramen stylomastoideum",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.04689,
+    0.01107,
+    1.56847
+   ],
+   "confidence": "high",
+   "method": "Exit point of the facial-nerve centreline from the temporal-bone volume (last inside node before it leaves for good), snapped to the bone surface.",
+   "evidence": {
+    "arc_mm": 86.9,
+    "dTB_mm": 0.3
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Geniculum of facial nerve (geniculate ganglion)",
+   "la": "Geniculum nervi facialis",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.04249,
+    -0.00169,
+    1.5851
+   ],
+   "confidence": "medium",
+   "method": "Sharpest turn (first genu) of the facial-nerve centreline within 8 mm after it passes the cochlea.",
+   "evidence": {
+    "turn_deg": 103
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Fundus of internal acoustic meatus (approx.)",
+   "la": "Fundus meatus acustici interni",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.03624,
+    0.00074,
+    1.5828
+   ],
+   "confidence": "low",
+   "method": "First facial-nerve centreline node inside the bone that comes within 2.5 mm of the cochlea (start of the labyrinthine part). The model does not hollow out the meatus, so this is an estimate.",
+   "evidence": {
+    "dCochlea_mm": 2.1
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Internal acoustic opening (porus of internal acoustic meatus)",
+   "la": "Porus acusticus internus",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.02039,
+    0.00569,
+    1.58221
+   ],
+   "confidence": "high",
+   "method": "Where the CN VII centreline (and, independently, the CN VIII centreline) first reaches the temporal bone (≤ 0.8 mm or inside); mean of both, snapped to the surface.",
+   "evidence": {
+    "VII_VIII_agreement_mm": 2.6
+   },
+   "src": "derived"
+  },
+  {
+   "n": "External opening of carotid canal",
+   "la": "Apertura externa canalis carotici",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.0243,
+    0.00048,
+    1.57034
+   ],
+   "confidence": "medium",
+   "method": "First node of the internal-carotid centreline (from the neck upwards) that lies inside or ≤ 2.5 mm from the temporal bone (artery in the canal lumen), snapped to the surface.",
+   "evidence": {
+    "ica_nodes_in_canal": 7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Internal opening of carotid canal",
+   "la": "Apertura interna canalis carotici",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.01711,
+    -0.00757,
+    1.57851
+   ],
+   "confidence": "medium",
+   "method": "Last node of the internal-carotid centreline that is inside or ≤ 2.5 mm from the temporal bone (where the artery leaves the petrous apex), snapped to the surface.",
+   "evidence": {
+    "arc_in_bone_mm": 23
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Jugular foramen",
+   "la": "Foramen jugulare",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.02543,
+    0.01354,
+    1.57035
+   ],
+   "confidence": "high",
+   "method": "Mean of the points where the CN IX, X and XI centreline pass closest to BOTH the temporal and the occipital bone (minimising the larger of the two distances).",
+   "evidence": {
+    "max_bone_distance_mm": {
+     "Glossopharyngeal nerve (IX)": 4.9,
+     "Vagus nerve (X)": 1.7,
+     "Accessory nerve (XI)": "excluded (14 mm from IX/X)"
+    },
+    "spread_mm": 5.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Foramen lacerum",
+   "la": "Foramen lacerum",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.01065,
+    -0.00674,
+    1.582
+   ],
+   "confidence": "low",
+   "method": "Point outside bone within 15 mm of the petrous apex that is closest to all three of temporal, sphenoid and occipital bone (1 mm grid). The cartilage-filled gap is approximated, not modelled.",
+   "evidence": {
+    "max_dist_to_three_bones_mm": 0.7,
+    "ica_dist_mm": 7.4
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular fossa",
+   "la": "Fossa mandibularis",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.04248,
+    -0.00887,
+    1.57876
+   ],
+   "confidence": "high",
+   "method": "Temporal-bone surface point closest to the centre of the TMJ articular disc.",
+   "evidence": {
+    "disc_to_bone_mm": 4.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Articular tubercle",
+   "la": "Tuberculum articulare",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.03837,
+    -0.01253,
+    1.57386
+   ],
+   "confidence": "medium",
+   "method": "Lowest temporal-bone surface point 3–20 mm anterior to the mandibular fossa within ±8 mm of its lateral position (the eminence in front of the fossa).",
+   "evidence": {
+    "below_fossa_mm": 4.9,
+    "anterior_mm": 3.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Condylar process (head of mandible)",
+   "la": "Caput mandibulae",
+   "on": "Mandible",
+   "p": [
+    -0.04484,
+    -0.00462,
+    1.57674
+   ],
+   "confidence": "high",
+   "method": "Mandible surface point closest to the centre of the TMJ articular disc.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Zygomatic process of temporal bone (tip)",
+   "la": "Processus zygomaticus ossis temporalis",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.05879,
+    -0.04236,
+    1.57733
+   ],
+   "confidence": "high",
+   "method": "Temporal-bone point closest to the zygomatic bone (the temporozygomatic suture at the tip of the zygomatic process).",
+   "evidence": {
+    "gap_mm": 0
+   },
+   "src": "derived"
+  },
+  {
+   "n": "External acoustic meatus (medial end, tympanic membrane)",
+   "la": "Meatus acusticus externus (pars medialis)",
+   "on": "Temporal bone.r",
+   "p": [
+    -0.04785,
+    0.00395,
+    1.57787
+   ],
+   "confidence": "medium",
+   "method": "Centre of the tympanic-membrane mesh, which closes the medial end of the external acoustic meatus. The lateral opening (porus acusticus externus) is not derivable and is on the pin list.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular foramen",
+   "la": "Foramen mandibulae",
+   "on": "Mandible",
+   "p": [
+    -0.03743,
+    -0.02814,
+    1.5309
+   ],
+   "confidence": "high",
+   "method": "Where the inferior-alveolar-nerve centreline (from above) enters the mandible, snapped to the surface.",
+   "evidence": {
+    "arc_mm": 18
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Coronoid process (tip)",
+   "la": "Processus coronoideus",
+   "on": "Mandible",
+   "p": [
+    -0.04289,
+    -0.04523,
+    1.56732
+   ],
+   "confidence": "high",
+   "method": "Highest mandible point within 4 mm of the temporalis insertion patch (the temporalis inserts on the coronoid process).",
+   "evidence": {
+    "patch_vertices": 275
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Angle of mandible (gonion)",
+   "la": "Angulus mandibulae (gonion)",
+   "on": "Mandible",
+   "p": [
+    -0.03805,
+    -0.0139,
+    1.52427
+   ],
+   "confidence": "medium",
+   "method": "Most posterior-inferior mandible point on this side (maximises posterior minus superior position).",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular notch",
+   "la": "Incisura mandibulae",
+   "on": "Mandible",
+   "p": [
+    -0.03916,
+    -0.01689,
+    1.55215
+   ],
+   "confidence": "medium",
+   "method": "Lowest point of the upper border of the ramus between the coronoid tip and the condylar head (top surface per 1 mm anteroposterior bin, then its minimum).",
+   "evidence": {
+    "bins": 40
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse foramen of axis",
+   "la": "Foramen transversarium axis",
+   "on": "Axis (C2)",
+   "p": [
+    -0.02121,
+    0.01523,
+    1.52724
+   ],
+   "confidence": "high",
+   "method": "Centre of the first (lowest) run of vertebral-artery centreline nodes inside or ≤ 1.5 mm from the Axis (C2).",
+   "evidence": {
+    "nodes": 3
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse foramen of atlas",
+   "la": "Foramen transversarium atlantis",
+   "on": "Atlas (C1)",
+   "p": [
+    -0.02489,
+    0.01451,
+    1.53742
+   ],
+   "confidence": "high",
+   "method": "Centre of the first (lowest) run of vertebral-artery centreline nodes inside or ≤ 1.5 mm from the Atlas (C1).",
+   "evidence": {
+    "nodes": 4
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse process of atlas (tip)",
+   "la": "Processus transversus atlantis",
+   "on": "Atlas (C1)",
+   "p": [
+    -0.04303,
+    0.01562,
+    1.54074
+   ],
+   "confidence": "high",
+   "method": "Most lateral point of the atlas on this side.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Stylomastoid foramen",
+   "la": "Foramen stylomastoideum",
+   "on": "Temporal bone.l",
+   "p": [
+    0.04689,
+    0.01107,
+    1.56847
+   ],
+   "confidence": "high",
+   "method": "Exit point of the facial-nerve centreline from the temporal-bone volume (last inside node before it leaves for good), snapped to the bone surface.",
+   "evidence": {
+    "arc_mm": 87,
+    "dTB_mm": 0.3
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Geniculum of facial nerve (geniculate ganglion)",
+   "la": "Geniculum nervi facialis",
+   "on": "Temporal bone.l",
+   "p": [
+    0.04249,
+    -0.00169,
+    1.5851
+   ],
+   "confidence": "medium",
+   "method": "Sharpest turn (first genu) of the facial-nerve centreline within 8 mm after it passes the cochlea.",
+   "evidence": {
+    "turn_deg": 103
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Fundus of internal acoustic meatus (approx.)",
+   "la": "Fundus meatus acustici interni",
+   "on": "Temporal bone.l",
+   "p": [
+    0.03624,
+    0.00074,
+    1.5828
+   ],
+   "confidence": "low",
+   "method": "First facial-nerve centreline node inside the bone that comes within 2.5 mm of the cochlea (start of the labyrinthine part). The model does not hollow out the meatus, so this is an estimate.",
+   "evidence": {
+    "dCochlea_mm": 2.1
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Internal acoustic opening (porus of internal acoustic meatus)",
+   "la": "Porus acusticus internus",
+   "on": "Temporal bone.l",
+   "p": [
+    0.02039,
+    0.00569,
+    1.58221
+   ],
+   "confidence": "high",
+   "method": "Where the CN VII centreline (and, independently, the CN VIII centreline) first reaches the temporal bone (≤ 0.8 mm or inside); mean of both, snapped to the surface.",
+   "evidence": {
+    "VII_VIII_agreement_mm": 2.6
+   },
+   "src": "derived"
+  },
+  {
+   "n": "External opening of carotid canal",
+   "la": "Apertura externa canalis carotici",
+   "on": "Temporal bone.l",
+   "p": [
+    0.0243,
+    0.00048,
+    1.57034
+   ],
+   "confidence": "medium",
+   "method": "First node of the internal-carotid centreline (from the neck upwards) that lies inside or ≤ 2.5 mm from the temporal bone (artery in the canal lumen), snapped to the surface.",
+   "evidence": {
+    "ica_nodes_in_canal": 7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Internal opening of carotid canal",
+   "la": "Apertura interna canalis carotici",
+   "on": "Temporal bone.l",
+   "p": [
+    0.01711,
+    -0.00757,
+    1.57851
+   ],
+   "confidence": "medium",
+   "method": "Last node of the internal-carotid centreline that is inside or ≤ 2.5 mm from the temporal bone (where the artery leaves the petrous apex), snapped to the surface.",
+   "evidence": {
+    "arc_in_bone_mm": 23
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Jugular foramen",
+   "la": "Foramen jugulare",
+   "on": "Temporal bone.l",
+   "p": [
+    0.02543,
+    0.01354,
+    1.57035
+   ],
+   "confidence": "high",
+   "method": "Mean of the points where the CN IX, X and XI centreline pass closest to BOTH the temporal and the occipital bone (minimising the larger of the two distances).",
+   "evidence": {
+    "max_bone_distance_mm": {
+     "Glossopharyngeal nerve (IX)": 4.9,
+     "Vagus nerve (X)": 1.7,
+     "Accessory nerve (XI)": "excluded (13 mm from IX/X)"
+    },
+    "spread_mm": 5.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Foramen lacerum",
+   "la": "Foramen lacerum",
+   "on": "Temporal bone.l",
+   "p": [
+    0.01065,
+    -0.00674,
+    1.582
+   ],
+   "confidence": "low",
+   "method": "Point outside bone within 15 mm of the petrous apex that is closest to all three of temporal, sphenoid and occipital bone (1 mm grid). The cartilage-filled gap is approximated, not modelled.",
+   "evidence": {
+    "max_dist_to_three_bones_mm": 0.7,
+    "ica_dist_mm": 7.4
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular fossa",
+   "la": "Fossa mandibularis",
+   "on": "Temporal bone.l",
+   "p": [
+    0.04248,
+    -0.00887,
+    1.57876
+   ],
+   "confidence": "high",
+   "method": "Temporal-bone surface point closest to the centre of the TMJ articular disc.",
+   "evidence": {
+    "disc_to_bone_mm": 4.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Articular tubercle",
+   "la": "Tuberculum articulare",
+   "on": "Temporal bone.l",
+   "p": [
+    0.03837,
+    -0.01253,
+    1.57386
+   ],
+   "confidence": "medium",
+   "method": "Lowest temporal-bone surface point 3–20 mm anterior to the mandibular fossa within ±8 mm of its lateral position (the eminence in front of the fossa).",
+   "evidence": {
+    "below_fossa_mm": 4.9,
+    "anterior_mm": 3.7
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Condylar process (head of mandible)",
+   "la": "Caput mandibulae",
+   "on": "Mandible",
+   "p": [
+    0.04484,
+    -0.00462,
+    1.57674
+   ],
+   "confidence": "high",
+   "method": "Mandible surface point closest to the centre of the TMJ articular disc.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Zygomatic process of temporal bone (tip)",
+   "la": "Processus zygomaticus ossis temporalis",
+   "on": "Temporal bone.l",
+   "p": [
+    0.05693,
+    -0.04225,
+    1.57671
+   ],
+   "confidence": "high",
+   "method": "Temporal-bone point closest to the zygomatic bone (the temporozygomatic suture at the tip of the zygomatic process).",
+   "evidence": {
+    "gap_mm": 0
+   },
+   "src": "derived"
+  },
+  {
+   "n": "External acoustic meatus (medial end, tympanic membrane)",
+   "la": "Meatus acusticus externus (pars medialis)",
+   "on": "Temporal bone.l",
+   "p": [
+    0.04785,
+    0.00395,
+    1.57787
+   ],
+   "confidence": "medium",
+   "method": "Centre of the tympanic-membrane mesh, which closes the medial end of the external acoustic meatus. The lateral opening (porus acusticus externus) is not derivable and is on the pin list.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular foramen",
+   "la": "Foramen mandibulae",
+   "on": "Mandible",
+   "p": [
+    0.03743,
+    -0.02814,
+    1.5309
+   ],
+   "confidence": "high",
+   "method": "Where the inferior-alveolar-nerve centreline (from above) enters the mandible, snapped to the surface.",
+   "evidence": {
+    "arc_mm": 18
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Coronoid process (tip)",
+   "la": "Processus coronoideus",
+   "on": "Mandible",
+   "p": [
+    0.04289,
+    -0.04523,
+    1.56732
+   ],
+   "confidence": "high",
+   "method": "Highest mandible point within 4 mm of the temporalis insertion patch (the temporalis inserts on the coronoid process).",
+   "evidence": {
+    "patch_vertices": 275
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Angle of mandible (gonion)",
+   "la": "Angulus mandibulae (gonion)",
+   "on": "Mandible",
+   "p": [
+    0.03805,
+    -0.0139,
+    1.52427
+   ],
+   "confidence": "medium",
+   "method": "Most posterior-inferior mandible point on this side (maximises posterior minus superior position).",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Mandibular notch",
+   "la": "Incisura mandibulae",
+   "on": "Mandible",
+   "p": [
+    0.03916,
+    -0.01689,
+    1.55215
+   ],
+   "confidence": "medium",
+   "method": "Lowest point of the upper border of the ramus between the coronoid tip and the condylar head (top surface per 1 mm anteroposterior bin, then its minimum).",
+   "evidence": {
+    "bins": 40
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse foramen of axis",
+   "la": "Foramen transversarium axis",
+   "on": "Axis (C2)",
+   "p": [
+    0.02121,
+    0.01523,
+    1.52724
+   ],
+   "confidence": "high",
+   "method": "Centre of the first (lowest) run of vertebral-artery centreline nodes inside or ≤ 1.5 mm from the Axis (C2).",
+   "evidence": {
+    "nodes": 3
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse foramen of atlas",
+   "la": "Foramen transversarium atlantis",
+   "on": "Atlas (C1)",
+   "p": [
+    0.0253,
+    0.01413,
+    1.53868
+   ],
+   "confidence": "high",
+   "method": "Centre of the first (lowest) run of vertebral-artery centreline nodes inside or ≤ 1.5 mm from the Atlas (C1).",
+   "evidence": {
+    "nodes": 4
+   },
+   "src": "derived"
+  },
+  {
+   "n": "Transverse process of atlas (tip)",
+   "la": "Processus transversus atlantis",
+   "on": "Atlas (C1)",
+   "p": [
+    0.04303,
+    0.01562,
+    1.54074
+   ],
+   "confidence": "high",
+   "method": "Most lateral point of the atlas on this side.",
+   "evidence": {},
+   "src": "derived"
+  },
+  {
+   "n": "Spinous process of axis (tip)",
+   "la": "Processus spinosus axis",
+   "on": "Axis (C2)",
+   "p": [
+    -0.00073,
+    0.05238,
+    1.51123
+   ],
+   "confidence": "high",
+   "method": "Most posterior point of the axis.",
+   "evidence": {},
+   "src": "derived"
+  }
+ ]
+}
