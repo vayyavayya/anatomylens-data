@@ -655,6 +655,102 @@
    "method": "Most posterior point of the axis.",
    "evidence": {},
    "src": "derived"
+  },
+  {
+   "n": "Anterior limb of internal capsule",
+   "la": "Crus anterius capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    -0.01245,
+    -0.02002,
+    1.62867
+   ],
+   "src": "derived",
+   "confidence": "medium",
+   "method": "Midpoint between the most lateral point of the caudate head (anterior third) and the most medial point of the lentiform nucleus at the same level.",
+   "evidence": {
+    "gap_between_nuclei_mm": -2.2
+   }
+  },
+  {
+   "n": "Genu of internal capsule",
+   "la": "Genu capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    -0.01882,
+    -0.00915,
+    1.62026
+   ],
+   "src": "derived",
+   "confidence": "low",
+   "method": "Midpoint between the deep nuclei (caudate/thalamus medially, lentiform laterally) halfway between the derived anterior and posterior limb points.",
+   "evidence": {
+    "gap_between_nuclei_mm": -19.8
+   }
+  },
+  {
+   "n": "Posterior limb of internal capsule",
+   "la": "Crus posterius capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    -0.02,
+    0.00816,
+    1.62499
+   ],
+   "src": "derived",
+   "confidence": "medium",
+   "method": "Midpoint between the most lateral point of the thalamus and the most medial point of the lentiform nucleus at the thalamus mid-level.",
+   "evidence": {
+    "gap_between_nuclei_mm": -2
+   }
+  },
+  {
+   "n": "Anterior limb of internal capsule",
+   "la": "Crus anterius capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    0.01245,
+    -0.02002,
+    1.62867
+   ],
+   "src": "derived",
+   "confidence": "medium",
+   "method": "Midpoint between the most lateral point of the caudate head (anterior third) and the most medial point of the lentiform nucleus at the same level.",
+   "evidence": {
+    "gap_between_nuclei_mm": -2.2
+   }
+  },
+  {
+   "n": "Genu of internal capsule",
+   "la": "Genu capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    0.01882,
+    -0.00915,
+    1.62026
+   ],
+   "src": "derived",
+   "confidence": "low",
+   "method": "Midpoint between the deep nuclei (caudate/thalamus medially, lentiform laterally) halfway between the derived anterior and posterior limb points.",
+   "evidence": {
+    "gap_between_nuclei_mm": -19.8
+   }
+  },
+  {
+   "n": "Posterior limb of internal capsule",
+   "la": "Crus posterius capsulae internae",
+   "on": "White matter of telencephalon",
+   "p": [
+    0.02,
+    0.00816,
+    1.62499
+   ],
+   "src": "derived",
+   "confidence": "medium",
+   "method": "Midpoint between the most lateral point of the thalamus and the most medial point of the lentiform nucleus at the thalamus mid-level.",
+   "evidence": {
+    "gap_between_nuclei_mm": -2
+   }
   }
  ]
 }
