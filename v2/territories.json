@@ -1,0 +1,382 @@
+{
+ "source": "Liu C-F et al. Digital 3D Brain MRI Arterial Territories Atlas. Sci Data 10, 74 (2023), doi:10.1038/s41597-022-01923-0. Atlas © 2021 The Johns Hopkins University, CC BY-SA 4.0 (label table). File: ArterialAtlas_padding.nii.gz from github.com/Chin-Fu-Liu/Acute-stroke_Detection_Segmentation (data/template).",
+ "dims": [
+  192,
+  224,
+  192
+ ],
+ "srow": [
+  [
+   -1,
+   0,
+   0,
+   96
+  ],
+  [
+   0,
+   1,
+   0,
+   -112
+  ],
+  [
+   0,
+   0,
+   1,
+   -96
+  ]
+ ],
+ "model_to_mni": [
+  -1112.8537900797419,
+  -14.65311517782763,
+  -7.5774200628767145,
+  0,
+  -3.580374466468454,
+  -986.0556591365605,
+  217.91169239685985,
+  0,
+  -16.406418679685665,
+  190.64588130891286,
+  1088.3469143401605,
+  0,
+  28.19937102967197,
+  -301.8708841852552,
+  -1788.8881170892869,
+  1
+ ],
+ "mni_to_model": [
+  -0.0008985015189626964,
+  0.000011690014023376657,
+  -0.000008596261038661851,
+  0,
+  2.5917245326276435e-7,
+  -0.0009763491682244122,
+  0.00019548901244010648,
+  0,
+  -0.000013589970321334532,
+  0.00017120344299296586,
+  0.0008844512520744017,
+  0,
+  0.0011044779021443922,
+  0.011202767046660674,
+  1.6414391851689332,
+  1
+ ],
+ "registration": {
+  "method": "affine ICP on outer brain surface + lateral-ventricle surfaces (ventricles weighted ×4), trimmed 90%",
+  "surface_residual": {
+   "iter": 59,
+   "atlas_to_model_mean_mm": 3.06,
+   "atlas_to_model_median_mm": 1.84,
+   "atlas_to_model_p95_mm": 10.76,
+   "model_to_atlas_mean_mm": 2.54,
+   "mean_mm": 2.8
+  },
+  "ventricle_centroid_error": {
+   "left_mm": 8.2,
+   "right_mm": 8.9,
+   "note": "centroid of atlas ventricle label vs model lateral-ventricle mesh; ventricle surfaces were part of the fit, so the remaining gap is a shape difference (enlarged ventricles in the elderly stroke cohort vs the young model)"
+  },
+  "anatomical_checks": {
+   "lentiform_in_lenticulostriate_pct": {
+    "l": 70,
+    "r": 74
+   },
+   "thalamus_in_thalamoperforators_pct": {
+    "l": 78,
+    "r": 78
+   },
+   "cerebellum_in_cerebellar_territories_pct": null
+  },
+  "warn": true
+ },
+ "labels": [
+  {
+   "id": 1,
+   "name": "anterior cerebral artery left",
+   "l1": "ACAL",
+   "l2id": 1,
+   "l2": "ACAL",
+   "l2bilat": "ACA",
+   "major": "Anterior"
+  },
+  {
+   "id": 2,
+   "name": "anterior cerebral artery right",
+   "l1": "ACAR",
+   "l2id": 2,
+   "l2": "ACAR",
+   "l2bilat": "ACA",
+   "major": "Anterior"
+  },
+  {
+   "id": 3,
+   "name": "medial lenticulostriate left",
+   "l1": "MLSL",
+   "l2id": 1,
+   "l2": "ACAL",
+   "l2bilat": "ACA",
+   "major": "Anterior"
+  },
+  {
+   "id": 4,
+   "name": "medial lenticulostriate right",
+   "l1": "MLSR",
+   "l2id": 2,
+   "l2": "ACAR",
+   "l2bilat": "ACA",
+   "major": "Anterior"
+  },
+  {
+   "id": 5,
+   "name": "lateral lenticulostriate left",
+   "l1": "LLSL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 6,
+   "name": "lateral lenticulostriate right",
+   "l1": "LLSR",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 7,
+   "name": "frontal pars of middle cerebral artery left",
+   "l1": "MCAFL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 8,
+   "name": "frontal pars of middle cerebral artery right",
+   "l1": "MCAFR",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 9,
+   "name": "parietal pars of middle cerebral artery left",
+   "l1": "MCAPL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 10,
+   "name": "parietal pars of middle cerebral artery right",
+   "l1": "MCAPL",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 11,
+   "name": "temporal pars of middle cerebral artery left",
+   "l1": "MCATL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 12,
+   "name": "temporal pars of middle cerebral artery right",
+   "l1": "MCATL",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 13,
+   "name": "occipital pars of middle cerebral artery left",
+   "l1": "MCAOL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 14,
+   "name": "occipital pars of middle cerebral artery right",
+   "l1": "MCAOL",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 15,
+   "name": "insular pars of middle cerebral artery left",
+   "l1": "MCAIL",
+   "l2id": 3,
+   "l2": "MCAL",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 16,
+   "name": "insular pars of middle cerebral artery right",
+   "l1": "MCAIL",
+   "l2id": 4,
+   "l2": "MCAR",
+   "l2bilat": "MCA",
+   "major": "Anterior"
+  },
+  {
+   "id": 17,
+   "name": "temporal pars of posterior cerebral artery left",
+   "l1": "PCATL",
+   "l2id": 5,
+   "l2": "PCAR",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 18,
+   "name": "temporal pars of posterior cerebral artery right",
+   "l1": "PCATR",
+   "l2id": 6,
+   "l2": "PCAL",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 19,
+   "name": "occipital pars of posterior cerebral artery left",
+   "l1": "PCAOL",
+   "l2id": 5,
+   "l2": "PCAL",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 20,
+   "name": "occipital pars of posterior cerebral artery right",
+   "l1": "PCAOR",
+   "l2id": 6,
+   "l2": "PCAR",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 21,
+   "name": "posterior choroidal and thalamoperfurators left",
+   "l1": "PCTPL",
+   "l2id": 5,
+   "l2": "PCAL",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 22,
+   "name": "posterior choroidal and thalamoperfurators right",
+   "l1": "PCTPR",
+   "l2id": 6,
+   "l2": "PCAR",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 23,
+   "name": "anteior choroidal and thalamoperfurators left",
+   "l1": "ACTPL",
+   "l2id": 5,
+   "l2": "PCAL",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 24,
+   "name": "anterior choroidal and thalamoperfurators right",
+   "l1": "ACTPR",
+   "l2id": 6,
+   "l2": "PCAR",
+   "l2bilat": "PCA",
+   "major": "Posterior"
+  },
+  {
+   "id": 25,
+   "name": "basilar left",
+   "l1": "BL",
+   "l2id": 7,
+   "l2": "VBL",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 26,
+   "name": "basilar right",
+   "l1": "BR",
+   "l2id": 8,
+   "l2": "VBR",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 27,
+   "name": "superior cerebellar left",
+   "l1": "SCL",
+   "l2id": 7,
+   "l2": "VBL",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 28,
+   "name": "superior cerebellar right",
+   "l1": "SCR",
+   "l2id": 8,
+   "l2": "VBR",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 29,
+   "name": "inferior cerebellar left",
+   "l1": "ICL",
+   "l2id": 7,
+   "l2": "VBL",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 30,
+   "name": "inferior cerebellar right",
+   "l1": "ICR",
+   "l2id": 8,
+   "l2": "VBR",
+   "l2bilat": "VB",
+   "major": "Posterior"
+  },
+  {
+   "id": 31,
+   "name": "lateral ventricle left",
+   "l1": "LVL",
+   "l2id": 9,
+   "l2": "LVR",
+   "l2bilat": "LV",
+   "major": "Ventricle"
+  },
+  {
+   "id": 32,
+   "name": "lateral ventricle right",
+   "l1": "LVR",
+   "l2id": 10,
+   "l2": "LVR",
+   "l2bilat": "LV",
+   "major": "Ventricle"
+  }
+ ]
+}
